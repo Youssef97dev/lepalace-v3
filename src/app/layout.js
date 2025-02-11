@@ -1,16 +1,7 @@
-import localFont from "next/font/local";
 import "./globals.css";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import Navbar from "@/components/Navbar";
+import { Analytics } from "@vercel/analytics/react";
+import BookingButton from "@/components/BookingButton";
 
 export const metadata = {
   title: "Create Next App",
@@ -20,10 +11,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className="relative w-full h-fit flex flex-col justify-start items-center">
+        <Navbar />
+        <div className="fixed bottom-0 left-0 w-full block lg:hidden z-10">
+          <BookingButton />
+        </div>
         {children}
+        <Analytics />
       </body>
     </html>
   );

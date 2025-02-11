@@ -2,26 +2,163 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import "lightgallery/css/lightgallery.css";
+@import "lightgallery/css/lg-thumbnail.css";
+@import "lightgallery/css/lg-zoom.css";
+
+@font-face {
+  font-family: "CottorwayPro";
+  src: url("./fonts/CottorwayPro-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: "CottorwayPro";
+  src: url("./fonts/CottorwayPro-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CottorwayPro";
+  src: url("./fonts/CottorwayPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CottorwayPro";
+  src: url("./fonts/CottorwayPro-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CottorwayPro";
+  src: url("./fonts/CottorwayPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CottorwayPro";
+  src: url("./fonts/CottorwayPro-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CottorwayPro";
+  src: url("./fonts/CottorwayPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CottorwayPro";
+  src: url("./fonts/CottorwayPro-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CottorwayPro";
+  src: url("./fonts/CottorwayPro-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+:root {
+  --brown-100: #6c0c0d;
+  --brown-90: #810e10;
+  --brown-80: #931012;
+  --brown-70: #a51215;
+  --brown-60: #b81417;
+  --brown-50: #ca1619;
+  --brown-40: #dc181c;
+  --brown-30: #e72326;
+  --brown-20: #0b1315;
+  --brown-10: #eb474a;
+
+  --yellow-color: #ffd28d;
+  --heading-color: #ffd28d;
+  --border-color: #4f4836;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--brown-20);
+  font-family: "CottorwayPro", sans-serif;
+}
+
+/* scroll bar */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--brown-10);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--brown-70);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brown-100);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.masonry {
+  column-count: 2;
+  column-gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .masonry {
+    column-count: 4;
+  }
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 1rem;
 }

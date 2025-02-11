@@ -1,0 +1,28 @@
+{
+  "menu": {
+    "home": "Accueil",
+    "about": "À propos",
+    "menu": "Menu",
+    "gallery": "Galerie",
+    "events": "Événements",
+    "contact": "Contact",
+    "book": "Réserver"
+  },
+  "about": {
+    "content_1": "At Le Palace, where everything from the French-inspired food (and the prices) are over the top, the opulent decor is matched only by the clientele.",
+    "content_2": "The lighting throughout the space is rich and warm, and the owner, Nordine Fakir, credits it for much of the restaurant’s success. Most diners begin the evening sitting inside, but then make their way to the boudoir-esque basement, festooned in photos of Yves Saint Laurent, and where dancing on the furniture goes late into the night."
+  },
+  "events": {
+    "placeholder": "Code d'accès",
+    "button": "Entrer",
+    "error": "Code d'accès incorrect"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "firstname": "Prénom",
+    "lastname": "Nom",
+    "email": "E-mail",
+    "subject": "Sujet",
+    "send": "Envoyer"
+  }
+}
