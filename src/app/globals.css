@@ -115,18 +115,18 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--brown-10);
+  background: var(--brown-20);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--brown-70);
+  background: var(--yellow-color);
   border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--brown-100);
+  background: var(--border-color);
 }
 
 @layer utilities {

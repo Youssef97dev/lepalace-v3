@@ -10,7 +10,7 @@ const Loader = () => {
       </div>
 
       {/* Beige background with logo animation */}
-      <div className="absolute inset-0 bg-color_2 flex items-center justify-center">
+      <div className="absolute inset-0 bg-primary_2 flex items-center justify-center z-40">
         <img
           src="/palace-logo.png" // Replace with your logo path
           alt="Logo"

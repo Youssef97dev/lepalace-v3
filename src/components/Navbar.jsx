@@ -11,7 +11,6 @@ import {
   FaWhatsappSquare,
   FaInstagramSquare,
   FaMailBulk,
-  FaDivide,
 } from "react-icons/fa";
 import { usePathname } from "next/navigation";
 
@@ -97,7 +96,7 @@ const Navbar = () => {
               {t("menu.book")}
             </Link>
             <div className="w-full bg-primary_2 text-black py-2 flex justify-evenly items-center text-heading_color">
-              <Link href="http://wa.me/212675480018" target="_blank">
+              <Link href="http://wa.me/212675480101" target="_blank">
                 <FaWhatsappSquare size={25} />
               </Link>
               <Link
@@ -126,7 +125,7 @@ const Navbar = () => {
             />
           </Link>
           <div
-            className="text-black transition-transform duration-500 pl-2"
+            className="text-heading_color transition-transform duration-500 pl-2"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? (
@@ -154,22 +153,22 @@ const Navbar = () => {
           leaveTo="transform -translate-y-full opacity-0"
         >
           <div className="fixed top-6 right-0 z-20 w-full h-screen bg-primary_2 flex flex-col items-center justify-center gap-10">
-            <ul className="w-1/2 flex flex-col justify-center items-center text-center text-[18px] leading-[24px] uppercase px-6">
+            <ul className="w-1/2 flex flex-col justify-center items-center text-center text-[18px] leading-[24px] uppercase px-6 text-heading_color">
               <li
                 onClick={() => setIsOpen(false)}
-                className="w-full px-3 py-2 hover:bg-primary hover:text-primary_1 transition-colors duration-150 ease-in-out"
+                className="w-full px-3 py-2 hover:bg-yellow_color hover:text-primary_2 transition-colors duration-150 ease-in-out"
               >
                 <Link href="/">{t("menu.home")}</Link>
               </li>
               <li
                 onClick={() => setIsOpen(false)}
-                className="w-full px-3 py-2 hover:bg-primary hover:text-primary_1 transition-colors duration-150 ease-in-out"
+                className="w-full px-3 py-2 hover:bg-yellow_color hover:text-primary_2 transition-colors duration-150 ease-in-out"
               >
                 <Link href="/about">{t("menu.about")}</Link>
               </li>
               <li
                 onClick={() => setIsOpen(false)}
-                className="w-full px-3 py-2 hover:bg-primary hover:text-primary_1 transition-colors duration-150 ease-in-out"
+                className="w-full px-3 py-2 hover:bg-yellow_color hover:text-primary_2 transition-colors duration-150 ease-in-out"
               >
                 <Link
                   target="_blank"
@@ -180,19 +179,19 @@ const Navbar = () => {
               </li>
               <li
                 onClick={() => setIsOpen(false)}
-                className="w-full px-3 py-2 hover:bg-primary hover:text-primary_1 transition-colors duration-150 ease-in-out"
+                className="w-full px-3 py-2 hover:bg-yellow_color hover:text-primary_2 transition-colors duration-150 ease-in-out"
               >
                 <Link href="/gallery">{t("menu.gallery")}</Link>
               </li>
               <li
                 onClick={() => setIsOpen(false)}
-                className="w-full px-3 py-2 hover:bg-primary hover:text-primary_1 transition-colors duration-150 ease-in-out"
+                className="w-full px-3 py-2 hover:bg-yellow_color hover:text-primary_2 transition-colors duration-150 ease-in-out"
               >
                 <Link href="/guests">{t("menu.events")}</Link>
               </li>
               <li
                 onClick={() => setIsOpen(false)}
-                className="w-full px-3 py-2 hover:bg-primary hover:text-primary_1 transition-colors duration-150 ease-in-out"
+                className="w-full px-3 py-2 hover:bg-yellow_color hover:text-primary_2 transition-colors duration-150 ease-in-out"
               >
                 <Link href="/contact">{t("menu.contact")}</Link>
               </li>
@@ -212,25 +211,25 @@ const Navbar = () => {
               <Link
                 href="https://www.sevenrooms.com/explore/lessalamamarrakech/reservations/create/search/"
                 target="_blank"
-                className="w-full bg-primary_9 text-primary_1 text-center py-3"
+                className="w-full bg-heading_color text-primary_2 text-center py-3"
               >
                 {t("menu.book")}
               </Link>
-              <div className="w-full bg-primary_2 text-black py-3 flex justify-evenly items-center">
-                <Link href="http://wa.me/212675480018" target="_blank">
-                  <FaWhatsappSquare size={25} color="#128c7e" />
+              <div className="w-full text-heading_color py-3 flex justify-evenly items-center">
+                <Link href="http://wa.me/212675480101" target="_blank">
+                  <FaWhatsappSquare size={25} />
                 </Link>
                 <Link
-                  href="https://www.instagram.com/lesalamamarrakech/"
+                  href="https://www.instagram.com/lepalacemarrakech"
                   target="_blank"
                 >
-                  <FaInstagramSquare size={25} color="#ec0075" />
+                  <FaInstagramSquare size={25} />
                 </Link>
                 <Link
-                  href="mailto:reservations@lesalamamarrakech.com"
+                  href="mailto:reservations@le-palacemarrakech.com"
                   target="_blank"
                 >
-                  <FaMailBulk size={25} color="#034fa0" />
+                  <FaMailBulk size={25} />
                 </Link>
               </div>
             </div>

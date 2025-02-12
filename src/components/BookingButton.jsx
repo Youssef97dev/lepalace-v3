@@ -27,12 +27,12 @@ const BookingButton = () => {
         <Link
           href="https://www.sevenrooms.com/explore/lessalamamarrakech/reservations/create/search/"
           target="_blank"
-          className="w-[85%] py-3 rounded bg-primary text-primary_1 text-center text-[16px] leading-[24px] font-medium uppercase"
+          className="w-[85%] py-3 rounded bg-heading_color text-primary_2 text-center text-[16px] leading-[24px] font-medium uppercase"
         >
           {t("menu.book")}
         </Link>
         <div
-          className="w-[15%] py-3 rounded bg-primary text-primary_1 flex justify-center items-center cursor-pointer transition-all duration-500"
+          className="w-[15%] py-3 rounded bg-heading_color text-primary_2 flex justify-center items-center cursor-pointer transition-all duration-500"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? (
@@ -49,9 +49,9 @@ const BookingButton = () => {
         </div>
 
         <Link
-          href="http://wa.me/212675480018"
+          href="http://wa.me/212675480101"
           target="_blank"
-          className={`fixed bottom-[3.5rem] w-fit px-4 py-3 m-2  rounded bg-black text-primary_1 flex ${
+          className={`fixed bottom-[3.5rem] w-fit px-4 py-3 m-2  rounded bg-black text-heading_color flex ${
             isOpen ? "right-0" : "-right-80"
           } justify-center items-center cursor-pointer transition-all duration-300 ease-in-out`}
         >
@@ -59,9 +59,9 @@ const BookingButton = () => {
         </Link>
 
         <Link
-          href="https://www.instagram.com/lesalamamarrakech/"
+          href="https://www.instagram.com/lepalacemarrakech"
           target="_blank"
-          className={`fixed bottom-[7rem] w-fit px-4 py-3 m-2  rounded bg-black text-primary_1 flex ${
+          className={`fixed bottom-[7rem] w-fit px-4 py-3 m-2  rounded bg-black text-heading_color flex ${
             isOpen ? "right-0" : "-right-80"
           } justify-center items-center cursor-pointer transition-all duration-300 ease-in-out`}
         >
@@ -69,9 +69,9 @@ const BookingButton = () => {
         </Link>
 
         <Link
-          href="mailto:reservations@lesalamamarrakech.com"
+          href="mailto:reservations@le-palacemarrakech.com"
           target="_blank"
-          className={`fixed bottom-[10.5rem] w-fit px-4 py-3 m-2  rounded bg-black text-primary_1 flex ${
+          className={`fixed bottom-[10.5rem] w-fit px-4 py-3 m-2  rounded bg-black text-heading_color flex ${
             isOpen ? "right-0" : "-right-80"
           } justify-center items-center cursor-pointer transition-all duration-300 ease-in-out`}
         >
