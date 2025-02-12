@@ -49,22 +49,22 @@ const Navbar = () => {
             />
           </Link>
           <ul className="w-[80%] flex flex-col justify-start items-start gap-0 text-[18px] leading-[24px] uppercase font-light px-6 text-yellow_color">
-            <li className="w-full px-3 py-2 hover:bg-heading_color hover:text-black transition-all duration-150 ease-in-out">
+            <li className="w-[60%] px-3 py-2 hover:bg-heading_color hover:text-black transition-all rounded duration-150 ease-in-out">
               <Link href="/">{t("menu.home")}</Link>
             </li>
-            <li className="w-full px-3 py-2 hover:bg-heading_color hover:text-black transition-all duration-150 ease-in-out">
+            <li className="w-[60%] px-3 py-2 hover:bg-heading_color hover:text-black transition-all rounded duration-150 ease-in-out">
               <Link href="/about">{t("menu.about")}</Link>
             </li>
-            <li className="w-full px-3 py-2 hover:bg-heading_color hover:text-black transition-all duration-150 ease-in-out">
+            <li className="w-[60%] px-3 py-2 hover:bg-heading_color hover:text-black transition-all rounded duration-150 ease-in-out">
               <Link href="/menu">{t("menu.menu")}</Link>
             </li>
-            <li className="w-full px-3 py-2 hover:bg-heading_color hover:text-black transition-all duration-150 ease-in-out">
+            <li className="w-[60%] px-3 py-2 hover:bg-heading_color hover:text-black transition-all rounded duration-150 ease-in-out">
               <Link href="/gallery">{t("menu.gallery")}</Link>
             </li>
-            <li className="w-full px-3 py-2 hover:bg-heading_color hover:text-black transition-all duration-150 ease-in-out">
+            <li className="w-[60%] px-3 py-2 hover:bg-heading_color hover:text-black transition-all rounded duration-150 ease-in-out">
               <Link href="/guests">{t("menu.events")}</Link>
             </li>
-            <li className="w-full px-3 py-2 hover:bg-heading_color hover:text-black transition-all duration-150 ease-in-out">
+            <li className="w-[60%] px-3 py-2 hover:bg-heading_color hover:text-black transition-all rounded duration-150 ease-in-out">
               <Link href="/contact">{t("menu.contact")}</Link>
             </li>
             <li className="w-full flex justify-start items-center gap-4 px-3 py-2">
