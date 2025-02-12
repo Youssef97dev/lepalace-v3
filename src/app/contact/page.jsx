@@ -1,6 +1,6 @@
 import React from "react";
 import Details from "./components/Details";
-import Mapbox from "./components/MapBox";
+import Mapbox from "./components/Mapbox";
 import ContactForm from "./components/ContactForm";
 
 const page = () => {

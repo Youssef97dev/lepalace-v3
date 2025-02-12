@@ -1,6 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
-
 const Mapbox = () => {
   return (
     <div className="flex justify-center items-center w-full mt-20 lg:mt-0 ">
