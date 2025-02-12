@@ -56,12 +56,7 @@ const Navbar = () => {
               <Link href="/about">{t("menu.about")}</Link>
             </li>
             <li className="w-full px-3 py-2 hover:bg-heading_color hover:text-black transition-all duration-150 ease-in-out">
-              <Link
-                target="_blank"
-                href="https://www.lesalamamarrakech.com/menu/"
-              >
-                {t("menu.menu")}
-              </Link>
+              <Link href="/menu">{t("menu.menu")}</Link>
             </li>
             <li className="w-full px-3 py-2 hover:bg-heading_color hover:text-black transition-all duration-150 ease-in-out">
               <Link href="/gallery">{t("menu.gallery")}</Link>
@@ -89,7 +84,7 @@ const Navbar = () => {
           </ul>
           <div className="w-[80%] flex flex-col justify-center items-center">
             <Link
-              href="https://www.sevenrooms.com/explore/lessalamamarrakech/reservations/create/search/"
+              href="#"
               target="_blank"
               className="w-full bg-heading_color text-black text-center py-2"
             >
@@ -170,12 +165,7 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
                 className="w-full px-3 py-2 hover:bg-yellow_color hover:text-primary_2 transition-colors duration-150 ease-in-out"
               >
-                <Link
-                  target="_blank"
-                  href="https://www.lesalamamarrakech.com/menu/"
-                >
-                  {t("menu.menu")}
-                </Link>
+                <Link href="/menu">{t("menu.menu")}</Link>
               </li>
               <li
                 onClick={() => setIsOpen(false)}
@@ -209,7 +199,7 @@ const Navbar = () => {
             </ul>
             <div className="w-1/2 flex flex-col justify-center items-center gap-3">
               <Link
-                href="https://www.sevenrooms.com/explore/lessalamamarrakech/reservations/create/search/"
+                href="#"
                 target="_blank"
                 className="w-full bg-heading_color text-primary_2 text-center py-3"
               >
