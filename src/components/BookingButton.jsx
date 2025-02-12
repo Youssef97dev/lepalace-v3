@@ -25,7 +25,7 @@ const BookingButton = () => {
     isClient && (
       <div className="relative w-full flex justify-center items-center gap-2 p-2">
         <Link
-          href="https://www.sevenrooms.com/explore/lessalamamarrakech/reservations/create/search/"
+          href="#"
           target="_blank"
           className="w-[85%] py-3 rounded bg-heading_color text-primary_2 text-center text-[16px] leading-[24px] font-medium uppercase"
         >
